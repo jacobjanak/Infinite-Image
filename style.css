@@ -5,7 +5,7 @@ body {
 header {
   height: 250px;
   font-size: 0; /* this prevents tiny gaps between images */
-  width: 5000px;
+  width: 10000px;
 }
 img {
   height: 100%;
