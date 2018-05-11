@@ -1,19 +1,18 @@
 body {
-  margin: 0;
   overflow: hidden;
 }
-header {
-  height: 250px;
-  width: 10000px;
 
-  /* prevent tiny gaps between images */
+.infinite-container {
+  width: 10000px;
+  /* font-size will create spacing between images if it's not 0 */
   font-size: 0;
-  line-height: 0;
 }
-img {
-  height: 100%;
+
+.infinite-image, .infinite-copy {
   display: inline-block;
+  height: 100%;
 }
+
 .flipped {
   /* this code flips an image horizontally */
   /* taken from https://css-tricks.com/snippets/css/flip-an-image/ */
