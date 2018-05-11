@@ -4,8 +4,11 @@ body {
 }
 header {
   height: 250px;
-  font-size: 0; /* this prevents tiny gaps between images */
   width: 10000px;
+
+  /* prevent tiny gaps between images */
+  font-size: 0;
+  line-height: 0;
 }
 img {
   height: 100%;
