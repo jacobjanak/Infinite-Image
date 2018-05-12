@@ -4,18 +4,34 @@
 
 **The Problem:**
 
-You have a beautiful image which should stretch across your entire page, without actually stretching. Stretching an image distorts it.
+Maintaing aspect ratio on images is hard. Telling an image to fill a dynamic element (an element that changes in size) will distort the image. But, if you're reading this right now, I probably don't have to tell you that.
 
-This can be difficult, especially since some people use extremely wide monitors.
+Up until now, the solution has been to cut off the edges of the images as necessary. For example. on wide browsers, you would lose some of the top/bottom portions of the image.
 
-You would have to find an image that is 2000px+ wide and 300px tall (or however tall you want it). Images with an aspect ratio that crazy don't exist and, if they did, they would take forever to load.
+There are two possible reasons you wouldn't want to do that:
+1. You don't want to cut off any of the image
+2. You want to support extremely wide monitors
 
 **The Solution:**
 
-Take your beautiful image and duplicate it until it covers the width of the page.
+Some images can be be duplicated, with the duplicate being flipped horizontally, to double the size of the image. This process can be repeated as many times as is necessary to cover the full width of the page.
 
-To make it look like a single, huge image, we must horizontally flip every other image.
+For example, here is an image:
+
+![Pattern](images/pattern.jpg)
+
+Now, let's double the width of the image:
+
+![Same pattern but doubled](images/pattern2.jpg)
+
+This image is a simple pattern that doesn't need to be flipped horizontally. However, for most images, the flipping will be necessary to make it look like one, conguent picture. You *could* make an extremely wide image using this same technique in a photo editor, but that would come with a severe increase in load times.
+
+**Infinite Image** leverages browser caching to efficiently increase the width of an image, and it only increases the width as much as is necessary for each particular browser.
 
 # Performance
 
-![Graph from Kinsta.com](https://kinsta.com/wp-content/uploads/2017/05/average-image-size-on-web.png)
+In this graph by [kinsta.com](https://www.kinsta.com), we can see that images are, by far, the largest files that websites have to load.
+
+![Graph from Kinsta.com](images/graph.png)
+
+This is a major concern for developers. It's important to consider efficiency when dealing with images. Infinite Image does exactly that.
