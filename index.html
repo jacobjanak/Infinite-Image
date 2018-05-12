@@ -13,6 +13,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css" />
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+		<!-- <link href="css/style-mobile.css" rel="stylesheet" /> -->
+		<!-- <link href="css/style-desktop.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+
+ -->
+
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
@@ -22,22 +29,18 @@
 
 			<!-- Header -->
 			<div id="header">
-				<div class="container">
 
-					<!-- Logo -->
-					<div id="logo">
-						<h1><a href="#">Infinite Image</a></h1>
-						<span>by Jacob Janak</span>
-					</div>
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a>Infinite Image</a></h1>
+					<span>by Jacob Janak</span>
+				</div>
 
-					<!-- Nav -->
-					<!-- <nav id="nav">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#">Content</a></li>
-							<li><a href="#">Copyright</a></li>
-						</ul>
-					</nav> -->
+				<div class="container infinite-container">
+
+					<!-- THE infinite image -->
+					<img class="infinite-image" src="https://media.ldscdn.org/images/media-library/clouds/clouds-mountain-peaks-909191-wallpaper.jpg" alt="image" />
+
 				</div>
 			</div>
 			<!-- /Header -->
@@ -51,10 +54,6 @@
 									<h2>Features</h2>
 								</header>
 								<ul class="style1">
-									<!-- <li class="first">
-										<span class="fa fa-check"></span>
-										<a href="#">Efficient</a>
-									</li> -->
 									<li class="first">
 										<span class="fa fa-check"></span>
 										<a href="#">Works on any image</a>
@@ -69,7 +68,7 @@
 									</li>
 									<li>
 										<span class="fa fa-check"></span>
-										<a href="#">Reduces load times</a>
+										<a href="#">Loads quickly</a>
 									</li>
 								</ul>
 								<a href="#" class="button">GitHub</a>
@@ -101,5 +100,7 @@
 			</div>
 
 		</div>
+
+		<script src="js/infinite-image.js"></script>
 	</body>
 </html>
