@@ -38,8 +38,6 @@ This image is a simple pattern that doesn't need to be flipped horizontally. How
 
 **Infinite Image** leverages browser caching to efficiently increase the width of an image, and it only increases the width as much as is necessary for each particular browser.
 
-# Performance
-
-Developers must consider efficiency when dealing with images. **Infinite Image** does that for you. In this graph by [kinsta.com](https://www.kinsta.com), we can see that images are, by far, the largest files that websites have to load.
+In this graph by [kinsta.com](https://www.kinsta.com), we can see that images are, by far, the largest files that websites have to load.
 
 ![Graph from Kinsta.com](images/graph.png)
