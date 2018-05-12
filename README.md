@@ -2,7 +2,13 @@
 
 [Click to view the live demo](https://jacobjanak.github.io/Infinite-Image/)
 
-To use **Infinite Image**, you only need to include the script and stylesheet on your website, both of which are tiny and will not impact performance. The script relies on jQuery, so you must also include that.
+To use **Infinite Image**, you only need to include the script and stylesheet on your website, both of which are tiny and will not impact performance. The script relies on jQuery, so you must also include that. In your HTML file, proper usage looks like this:
+
+```html
+<div class="infinite-container">
+  <img class="infinite-image" src="picture.jpg" />
+</div>
+```
 
 # Purpose
 
