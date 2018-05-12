@@ -5,6 +5,56 @@
 */
 
 /*********************************************************************************/
+/* Infinite Image                                                                       */
+/*********************************************************************************/
+body {
+	overflow-x: hidden !important;
+}
+
+#header {
+	height: 320px !important;
+	padding: 0px !important;
+}
+
+#logo {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+
+#logo > h1, #logo > span {
+	color: black !important;
+}
+
+.infinite-container {
+  width: 10000px !important;
+	height: 100% !important;
+	margin: 0px !important;
+  font-size: 0 !important;
+	text-align: left !important;
+}
+
+.infinite-image, .infinite-copy {
+  display: inline-block !important;
+  height: 100% !important;
+
+}
+
+.flipped {
+  /* this code flips an image horizontally */
+  /* taken from https://css-tricks.com/snippets/css/flip-an-image/ */
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+
+/*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
 
@@ -675,8 +725,6 @@ ul.style3 .first {
 	{
 		position: relative;
 		text-align: center;
-		background: url(../images/banner.jpg) no-repeat center;
-		background-size: cover;
 	}
 
 
