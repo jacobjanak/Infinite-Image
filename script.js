@@ -10,12 +10,12 @@ $(function() {
   const infiniteImage = () => {
     const browserWidth = $(window).width();
 
-    //
+    // for each infinite image find how many more copies are needed
     $.each($('.infinite-image'), function() {
       const imgsNeeded = Math.ceil(browserWidth / $(this).width());
       const imgsExisting = $(this).siblings('.infinite-copy').length + 1;
 
-      //
+      // create a copy
       for (i = imgsExisting + 1; i <= imgsNeeded; i++) {
         const $newImg = $('<img>');
         $newImg.addClass('infinite-copy')
