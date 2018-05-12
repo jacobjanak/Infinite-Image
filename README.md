@@ -2,6 +2,10 @@
 
 [Click to view the live demo](https://jacobjanak.github.io/Infinite-Image/)
 
+To use **Infinite Image**, you only need to include the script and stylesheet on your website, both of which are tiny and will not impact performance. The script relies on jQuery, so you must also include that.
+
+# Purpose
+
 **The Problem:**
 
 Maintaing aspect ratio on images is hard. Telling an image to fill a dynamic element (an element that changes in size) will distort the image. But, if you're reading this right now, I probably don't have to tell you that.
@@ -30,8 +34,6 @@ This image is a simple pattern that doesn't need to be flipped horizontally. How
 
 # Performance
 
-In this graph by [kinsta.com](https://www.kinsta.com), we can see that images are, by far, the largest files that websites have to load.
+Developers must consider efficiency when dealing with images. **Infinite Image** does that for you. In this graph by [kinsta.com](https://www.kinsta.com), we can see that images are, by far, the largest files that websites have to load.
 
 ![Graph from Kinsta.com](images/graph.png)
-
-This is a major concern for developers. It's important to consider efficiency when dealing with images. Infinite Image does exactly that.
