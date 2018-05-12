@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
   // GLOBAL VARIABLES
   let i, j; // for looping
